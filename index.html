@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css/normalize_v2.css?v=2">
+    <link rel="stylesheet" href="styles.css/styles_v2.css?v=2">
+    <title>Mis 15 años Geno</title>
+    <link rel="stylesheet" href="styles.css/mediaqueries_v2.css?v=2">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="nav container" id="nav">
+
+            <div class="nav__icons">
+                <a href="#nav">
+                    <img class="nav__open" src="assets/vectores/hamburguesa.svg" alt="">
+                </a>
+                <a href="#">
+                    <img class="nav__close" src="assets/vectores/cruz.svg" alt="">
+                </a>
+                <ul class="nav__items">
+
+                    <li class="nav__links">
+                        <a class="nav__link" href="#temporizador">¿Cuánto falta?</a>
+                    </li>
+                    <li class="nav__links">
+                        <a class="nav__link" href="#donde">Ubicación</a>
+                    </li>
+                    <li class="nav__links">
+                        <a class="nav__link" href="#fotos">Fotos</a>
+                    </li>
+                    <li class="nav__links">
+                        <a class="nav__link" href="#playlist">Playlist</a>
+                    </li>
+                    <li class="nav__links">
+                        <a class="nav__link" href="#album">Album</a>
+                    </li>
+                    <li class="nav__links">
+                        <a class="nav__link" href="#correo">Confirmación</a>
+                    </li>
+    
+                </ul>
+
+            </div>
+        </nav>
+
+        <section class="music"  data-aos="flip-left">
+
+            <h3 class="music__title">Dale Play!
+            </h3>
+
+            <div class="audio-player-container">
+                <div class="audio-player">
+                    <audio id="audio" src="assets/musica.mp3"></audio>
+                    <div class="controls-container">
+                        <div class="audio-controls">
+                            <button id="rewindBtn" class="rewind">
+                                <img class="control__icon" src="assets/vectores/rewind.svg" alt="">
+                            </button>
+                            <button id="playPauseBtn" class="play"></button>
+                            <button id="forwardBtn" class="forward">
+                                <img class="control__icon" src="assets/vectores/fordward.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- <section class="waves">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </section> -->
+
+    </header>
+
+    <video class="main__video" src="assets/video/videoAZUL.mp4" autoplay loop muted></video>
+
+    <main>
+
+
+
+        <section class="temporizador container" data-aos="fade-right" id="temporizador">
+            <h3 class="temporizador__title">Falta muy poquito</h3>
+            <div class="timer">
+                <div class="timer-item">
+                    <p class="timer-value" id="days">0</p>
+                    <p class="timer-label">Días</p>
+                </div>
+                <div class="timer-item">
+                    <p class="timer-value" id="hours">0</p>
+                    <p class="timer-label">Horas</p>
+                </div>
+                <div class="timer-item">
+                    <p class="timer-value" id="minutes">0</p>
+                    <p class="timer-label">Minutos</p>
+                </div>
+                <div class="timer-item">
+                    <p class="timer-value" id="seconds">0</p>
+                    <p class="timer-label">Segundos</p>
+                </div>
+            </div>
+        </section>
+
+
+        <img class="img__separador" src="assets/vectores/separador.svg" alt="">
+
+
+
+        <secton class="frase" data-aos="fade-left">
+            <h3 class="regalos__frase" data-aos="fade-up">
+                "Será una noche mágica para mi y me encantaría que me acompañaras"
+            </h3>
+        </secton>
+
+
+
+        <img class="img__separador" src="assets/vectores/separador.svg" alt="">
+
+
+
+        <section class="donde" id="donde">
+
+            <div class="donde__lugar">
+              
+                <article class="donde__container">
+                    <h3 class="title" data-aos="fade-left">Misa</h3>
+                    <h4 class="donde__subtitle" data-aos="fade-up">Te espero el día 13 de Junio del 2024 a hs 20:00 en
+                         Pquia. Nuestra Sra. de Fátima en calle Muñecas 1570</h4>
+                    <img class="donde__img" src="assets/imagenes/iglesia.webp" data-aos="fade-right">
+                    <a href="https://maps.app.goo.gl/WhQ3eiQY59yZ9TjK9" class="boton__cta" data-aos="fade-up">Ver
+                        ubicación de la Misa</a>
+                </article>
+            </div>
+
+            <div class="donde__lugar">            
+                <article class="donde__container">
+                    <h3 class="title" data-aos="fade-left">Fiesta</h3>
+                    <h4 class="donde__subtitle" data-aos="fade-up">Te espero el día 19 de Julio del 2024 a hs 22:00 en salón "La Foresta", Ruta Nacional n°9 Km. 1301, Tafí Viejo, Tucumán</h4>
+                    <img class="donde__img" src="assets/imagenes/salon.webp" data-aos="fade-right">
+                    <a href="https://maps.app.goo.gl/R5UDwZj6VkBSKRaCA" class="boton__cta" data-aos="fade-up">Ver
+                        ubicación del salón</a>
+                </article>
+            </div>
+
+        </section>
+
+
+
+        
+        <img class="img__separador" src="assets/vectores/separador.svg" alt="">
+
+
+
+        <!-- <section class="swiper mySwiper" id="fotos">
+
+            <h3 class="title" data-aos="fade-up">Mis Fotos</h3>
+            <h5 class="swiper__subtitle" data-aos="fade-right">Desliza</h5>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="swiper__img" src="assets/imagenes/fotos/uno.webp" alt=""></div>
+                <div class="swiper-slide"><img class="swiper__img" src="assets/imagenes/fotos/tres.webp" alt=""></div>
+                <div class="swiper-slide"><img class="swiper__img" src="assets/imagenes/fotos/cuatro.webp" alt=""></div>
+                <div class="swiper-slide"><img class="swiper__img" src="assets/imagenes/fotos/cinco.webp" alt=""></div>
+                <div class="swiper-slide"><img class="swiper__img" src="assets/imagenes/fotos/seis.webp" alt=""></div>
+                <div class="swiper-slide"><img class="swiper__img" src="assets/imagenes/fotos/siete.webp" alt=""></div>
+                <div class="swiper-slide"><img class="swiper__img" src="assets/imagenes/fotos/dos.webp" alt=""></div>
+                <div class="swiper-slide"><img class="swiper__img" src="assets/imagenes/fotos/ocho.webp" alt=""></div>
+                <div class="swiper-slide"><img class="swiper__img" src="assets/imagenes/fotos/nueve.webp" alt=""></div>
+                <div class="swiper-slide"><img class="swiper__img" src="assets/imagenes/fotos/diez.webp" alt=""></div>
+
+            </div>
+        </section> -->
+
+
+        <section class="itinerario" data-aos="fade-up">
+
+
+            <div class="itinerario__content contenedor block glow">
+                <div class="title">Itinerario</div>
+                <div class="parrafo parrafo--active">Viernes 19 de Julio</div>
+
+                <!-- <article class="itinerario__item">
+
+                    <img class="itinerario__icon" src="assets/vectores/ICONiglesia.svg">
+                    <div class="itinerario__datos">
+
+
+                        <h4 class="itinerario__text1">Ceremonia Religiosa</h4>
+
+                        <div class="itinerario__textvector">
+                            <img class="intinerario__flecha intinerario__flecha--active"
+                                src="assets/vectores/ICONflecha.svg" alt="">
+
+                            <h4 class="itinerario__text2">16:30hs</h4>
+                            <img class="intinerario__flecha" src="assets/vectores/ICONflecha.svg" alt="">
+                        </div>
+
+                        <img class="itinerario__separador" src="assets/vectores/ICONseparador.svg" alt="">
+                    </div>
+                </article> -->
+
+                <article class="itinerario__item">
+
+                    <img class="itinerario__icon" src="assets/vectores/ICONingreso.svg">
+                    <div class="itinerario__datos">
+
+
+                        <h4 class="itinerario__text1">Ingreso de invitados </h4>
+
+                        <div class="itinerario__textvector">
+                            <img class="intinerario__flecha intinerario__flecha--active"
+                                src="assets/vectores/ICONflecha.svg" alt="">
+
+                            <h4 class="itinerario__text2">22:00hs</h4>
+                            <img class="intinerario__flecha" src="assets/vectores/ICONflecha.svg" alt="">
+                        </div>
+
+                        <img class="itinerario__separador" src="assets/vectores/ICONseparador.svg" alt="">
+                    </div>
+                </article>
+
+                <article class="itinerario__item">
+
+                    <img class="itinerario__icon" src="assets/vectores/ICONquince.svg">
+                    <div class="itinerario__datos">
+
+
+                        <h4 class="itinerario__text1">Mi ingreso</h4>
+
+                        <div class="itinerario__textvector">
+                            <img class="intinerario__flecha intinerario__flecha--active"
+                                src="assets/vectores/ICONflecha.svg" alt="">
+
+                            <h4 class="itinerario__text2">22:30hs</h4>
+                            <img class="intinerario__flecha" src="assets/vectores/ICONflecha.svg" alt="">
+                        </div>
+
+                        <img class="itinerario__separador" src="assets/vectores/ICONseparador.svg" alt="">
+                    </div>
+                </article>
+
+                <article class="itinerario__item">
+
+                    <img class="itinerario__icon" src="assets/vectores/ICONcena.svg">
+                    <div class="itinerario__datos">
+
+
+                        <h4 class="itinerario__text1">Cena Lunch</h4>
+
+                        <div class="itinerario__textvector">
+                            <img class="intinerario__flecha intinerario__flecha--active"
+                                src="assets/vectores/ICONflecha.svg" alt="">
+
+                            <h4 class="itinerario__text2">23:00hs</h4>
+                            <img class="intinerario__flecha" src="assets/vectores/ICONflecha.svg" alt="">
+                        </div>
+
+                        <img class="itinerario__separador" src="assets/vectores/ICONseparador.svg" alt="">
+                    </div>
+                </article>
+
+                <article class="itinerario__item">
+
+                    <img class="itinerario__icon" src="assets/vectores/ICONfiesta.svg">
+                    <div class="itinerario__datos">
+
+
+                        <h4 class="itinerario__text1">Inicio de la fiesta </h4>
+
+                        <div class="itinerario__textvector">
+                            <img class="intinerario__flecha intinerario__flecha--active"
+                                src="assets/vectores/ICONflecha.svg" alt="">
+
+                            <h4 class="itinerario__text2">00:00hs</h4>
+                            <img class="intinerario__flecha" src="assets/vectores/ICONflecha.svg" alt="">
+                        </div>
+
+                        <img class="itinerario__separador" src="assets/vectores/ICONseparador.svg" alt="">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+
+        <img class="img__separador" src="assets/vectores/separador.svg" alt="">
+
+
+
+
+        <section class="agradecimientos container" data-aos="flip-left">
+
+            <p class="thank__title">"Deseo expresar mi profundo agradecimiento a todos mis familiares y quiero destacar el valioso sacrificio realizado especialmente por mi madre, cuyo apoyo fué fundamental para hacer realidad este momento tan significativo en mi vida"</p>
+
+            <h5 class="thank_name">Mi Madre Laura</h5>
+
+            <h5 class="thank_name thank_name--padrinos">Mis Padrinos Omar y María de los Ángeles</h5>
+
+
+
+
+        </section>
+
+
+        
+        <img class="img__separador" src="assets/vectores/separador.svg" alt="">
+
+
+
+        <section class="dresscode contenedor block glow" id="dresscode" >
+
+            <h4 class="title title--active">Dresscode</h4>
+            <h4 class="subtitle subtitle--active">Elegante Sport</h4>
+            <p class="dresscode__note">No asistir con zapatillas, y el color verde está reservado para la Quinceañera</p>
+            <img class="dresscode__img" src="assets/vectores/dresscode.svg" alt="">
+
+            <button class="boton__cta" id="showImage" data-aos="fade-up">Ver Ejemplo</button>
+
+            <div id="lightbox" class="lightbox">
+                <span id="closeButton" class="close-button">X</span>
+                <img src="assets/imagenes/drescode.webp" alt="Imagen" />
+            </div>
+        </section>
+
+
+
+        
+        <img class="img__separador" src="assets/vectores/separador.svg" alt="">
+
+
+
+
+        <section class="regalos">
+
+
+            <div class="regalos__fondo">
+
+                <h3 class="regalos__paragraph">
+                    "Quiero que sepas que tu presencia es lo más importante en mi fiesta y si lo deseas, puedes hacerme
+                    un  presente, que podrás dejarlo en mi mesa de regalos, también puedes hacerlo por transferencia a la siguiente cuenta...
+                    y recuerda: <br> ¡Tu cariño es el mejor regalo que puedo recibir!"
+                </h3>
+
+                <button id="mostrarBoton" class="boton__diferente">Ver datos bancarios</button>
+                <div id="textoDesplegable" class="escondido regalos__data">
+                    <p class="regalos__data"><b>CBU: </b> 4530000800014001589624</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="playlist container" id="playlist">
+
+            <div class="playlist__container">
+
+                <h3 class="playlist__title" data-aos="fade-left">No existe fiesta sin buena música</h3>
+                <img class="playlist__img" src="assets/vectores/dj.svg" alt="vector de dj" data-aos="fade-up">
+                <h5 class="playlist__subtitle" data-aos="flip-up">➤Que música crees que no debería faltar? <br> Ayúdame
+                    a elegir</h5>
+                <img class="playlist__espectro" src="assets/imagenes/espectro.webp" alt="espectro musical"
+                    data-aos="fade-right">
+
+                <form class="form__playlist" action="index.php" method="post" data-aos="flip-right">
+
+                    <label for="name1">Tu nombre</label>
+                    <input class="form__input" type="text" id="name1" name="name1" placeholder="tu nombre">
+
+                    <label for="musica">Recomendame un tema</label>
+                    <textarea class="form__input" name="musica" id="musica" name="musica"
+                        placeholder="escribe tu musica recomendada o pega el link"></textarea>
+
+                    <button class="boton__cta" type="submit" name="enviar1">enviar</button>
+
+                </form>
+            </div>
+
+        </section>
+
+
+
+        <img class="img__separador" src="assets/vectores/separador.svg" alt="">
+
+
+
+
+        <section class="album" id="album">
+            <div class="album__container">
+            <h2 class="title title--album" data-aos="fade-up">Mi álbum de fotos</h2>
+            <h3 class="album__title" data-aos="fade-up">
+              Quiero inmortalizar este maravilloso momento, guardando fotos y para ello tengo mi mural en Instagram           </h3>
+            <h3 class="album__subtitle" data-aos="fade-right">¿Tenés fotos conmigo?</h3>
+            <img class="album__img" src="assets/imagenes/soga.webp" alt="tira de fotos" data-aos="fade-left">
+            <!-- <a href="https://photos.app.goo.gl/uaVHeWeA9SrPLazK9" class="boton__cta" data-aos="fade-up">Subilas aquí</a> -->
+            <h4 class="album__hastag" data-aos="fade-up">Subilas con el hashtag <br> <span class="album__spam">#genomis15</span></h4>
+        </div>
+      
+          </section>
+
+
+
+
+          <img class="img__separador" src="assets/vectores/separador.svg" alt="">
+
+
+
+
+        <section class="confirmacion" id="correo"  data-aos="flip-left">
+
+            <h5 class="confirmacion__text">
+                Recordá que tenes hasta el día 5 de Julio del
+                        2024 para confirmar tu asistencia, la cual es de gran importancia para mi.
+            </h5>
+            <a class="btn__cta btn__cta--confirmacion" href="https://wa.link/9cju2u">
+                <img class="confirmacion__icon" src="assets/vectores/whatsapp_redondo.svg" alt="">Confirmar presencia</a>
+
+
+
+            <!-- <div class="confirmacion__datos">
+
+
+
+                    <div class="confirmacion__text" data-aos="flip-right">Recordá que tenes hasta el día 1 de Abril del
+                        2024 para confirmar tu asistencia
+
+
+                </div>
+                <a class="btn__cta btn__cta--confirmacion" href="https://wa.link/mmojbh">
+                    <img class="confirmacion__icon" src="assets/vectores/whatsapp_redondo.svg" alt="">Confirmar presencia</a>
+            </div> -->
+
+
+
+        </section>
+
+        <section class="footer">
+            <div class="ondas">
+                <div class="onda" id="onda1"></div>
+                <div class="onda" id="onda2"></div>
+                <div class="onda" id="onda3"></div>
+                <div class="onda" id="onda4"></div>
+            </div>
+            <h3 class="footer__frase">"Deseo compartirlo con las personas que siempre están presentes en mi vida... <br> Tú eres una de ellas "</h3>
+        </section>
+        <section class="info" id="info">
+           <h6 class="info__text">
+            Página creada por "Luno Digitales" para los 15 años de Geno  - 2024 &copy todos los derechos reservados - <br>
+            <a class="info__link" href="https://www.luno.net.ar/">
+                www.luno.net.ar
+            </a>
+
+           </h6>
+
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/scripts_v2.js?v=2"></script>
+</body>
+
+</html>

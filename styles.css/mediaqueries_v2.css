@@ -1,0 +1,39 @@
+@media (width >= 768px) {
+    header {
+        height: 100vh;
+        background-image: linear-gradient(to top, rgba(78, 223, 255, 0), rgba(0, 132, 255, 0.159)), url(../assets/imagenes/fondo2.webp);
+    }
+    
+    .nav__open,
+.nav__close {
+    display: none;
+}
+    .nav__items {
+        position: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: unset;
+        text-align: unset;
+        background-color: unset;
+        padding: 0;
+        width: unset;
+        height: unset;
+        transform: unset;
+        right: unset;
+        top: unset;
+        transition: unset;
+        border-radius: unset;
+        z-index: unset;
+    }
+    .nav__link {
+        font-family: var(--font-neue);
+       font-weight: 500;
+       color: #ffffff;
+       margin-left: 1em;
+       font-weight: 900;
+       font-size: 1.1rem;
+       text-shadow: 0 0 3px #000,0 0 3px #000,0 0 3px #000 ;
+   }
+
+    
+}
